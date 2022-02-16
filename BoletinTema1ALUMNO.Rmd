@@ -129,25 +129,16 @@ setdiff(rownames(df_mammals),rownames(df_anim))
 e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
+#La diferencia entre estos animales se encuentra principalmente en el cerebro y el cuerpo.
 ```
 
 2.  La funcion **qqPlot** del paquete **car** puede ser utilizada para determinar gráficamente si una serie de puntos siguen una distribución de datos Gaussiana. Si las muestras están dentro de las líneas discontinuas podemos indicar que siguen una distribución Gaussiana con un 95 % de confianza. Utilizando esta función representa el logaritmo neperiano (**log**) del peso del cerebro (**brain weigths**) del registro de datos **mammals** del paquete **MASS** y conjunto de datos **Animals2** de la librería **robustbase**. ¿Presentan el mismo comportamiento ?.¿Podríamos decir que siguen una distribución Gaussiana ?
 
 ```{r}
-
-
+library(car)
+qqPlot(log(df_mammals$brain))
+qqPlot(log(df_anim$brain))
+#Podemos decir que ambas representaciones siguen una distribución Gaussiana,lo que sí es cierto es que algunos puntos se salen de las líneas discontinuas y seguramente sean los animales que no aparecen en ambos conjuntos.
 ```
 
 3.  La función **library** sin argumentos abre una ventana y muestra las librerías que han sido instaladas.
