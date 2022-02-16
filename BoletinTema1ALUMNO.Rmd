@@ -170,6 +170,13 @@ head(df_cabb,n=2)
 head(df_cabb,n=3)
 tail(df_cabb)
 is.na(df_cabb)
+library(car)
+df_chi = Chile
+str(df_chi)
+head(df_chi,n=2)
+head(df_chi,n=3)
+tail(df_chi)
+is.na(df_chi)
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
