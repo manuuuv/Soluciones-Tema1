@@ -92,23 +92,24 @@ b.  Usa las funciones **dim, head, tail, str** para una primera visión de los c
 c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+library(MASS)
+df_mammals = mammals
+library(robustbase)
+df_anim = Animals2
+dim(df_mammals)
+head(df_mammals,n=2)
+head(df_mammals,n=3)
+tail(df_mammals)
+str(df_mammals)
+dim(df_anim)
+head(df_anim,n=2)
+head(df_anim,n=3)
+tail(df_anim)
+str(df_anim)
+rownames(df_mammals)
+colnames(df_mammals)
+rownames(df_anim)
+colnames(df_anim)
 ```
 
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
