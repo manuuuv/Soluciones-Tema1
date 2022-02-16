@@ -115,12 +115,8 @@ colnames(df_anim)
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 
 ```{r}
-
-
-
-
-
-
+commonAnimals = intersect(rownames(df_mammals),rownames(df_anim))
+commonAnimals
 ```
 
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
