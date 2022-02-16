@@ -151,6 +151,8 @@ qqPlot(log(df_anim$brain))
 libReturn = library()
 str(libReturn)
 head(libReturn$results,n=5)
+dim(libReturn$results)
+#Tengo instaladas 236 librerías.
 ```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
