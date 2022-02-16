@@ -122,12 +122,8 @@ commonAnimals
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
 
 ```{r}
-
-
-
-
-
-
+setdiff(rownames(df_mammals),rownames(df_anim))
+#Son 4 animales.
 ```
 
 e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
