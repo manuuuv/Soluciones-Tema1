@@ -177,6 +177,9 @@ head(df_chi,n=2)
 head(df_chi,n=3)
 tail(df_chi)
 is.na(df_chi)
+summary(df_cabb)
+summary(df_chi)
+#Vemos que en el conjunto Chile hay valores perdidos en las variables edad,ingresos,votos y estatus.
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
